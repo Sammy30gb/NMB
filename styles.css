@@ -4,11 +4,15 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+
+
+
 .head-header {
   padding-block: 25px;
 }
 
 .home-list {
+  text-decoration: none;
   color: #252525 !important;
   text-decoration: none;
   font-size: 18px;
@@ -23,7 +27,7 @@
   margin-left: 95px;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .loan-btn {
@@ -472,6 +476,8 @@ footer {
   line-height: 24px;
 }
 .features p {
+  text-decoration: none;
+  list-style: none;
   font-size: 15px;
   line-height: 26.4px;
   margin-bottom: 18px;
@@ -1192,6 +1198,7 @@ footer a p:hover {
 }
 @media (max-width: 720px) {
   .map {
+    display: none;
     width: 50%;
     margin-block: 50px;
     img {
