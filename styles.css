@@ -4,36 +4,44 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
-
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #ffffff;
-  padding-inline: 80px;
-  padding-block: 20px;
+.head-header {
+  padding-block: 25px;
 }
 
+.home-list {
+  color: #252525 !important;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 60px !important;
+}
+.home-list:hover {
+  color: #61ce70 !important;
+}
 .logo {
   width: 230px;
+  margin-left: 95px;
 }
 a {
   text-decoration: none;
 }
-nav ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-}
-nav ul li {
-  margin: 10px 15px;
-  color: #252525;
+
+.loan-btn {
+  margin-right: 95px;
+  cursor: pointer;
+  font-size: 15px;
   text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
+  padding: 14px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #fecc26;
+  color: #000000;
+  border: 1px;
+  border-radius: 5px;
 }
-nav ul li:hover {
-  color: #61ce70;
+.loan-btn:hover {
+  background-color: #61ce70;
+  color: #ffffff;
 }
 .btn {
   cursor: pointer;
@@ -57,29 +65,41 @@ nav ul li:hover {
 }
 
 @media (max-width: 720px) {
-  header {
-    /* display: none; */
-    padding-right: 20px;
-    padding-left: 0px;
-
-    .home-btn {
-      display: none;
-    }
+  .home-list {
+    color: #252525 !important;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 18px !important;
+  }
+  .loan-btn {
+    margin-left: 18px !important;
+    margin-right: 0px;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 10px 17px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #fecc26;
+    color: #000000;
+    border: 1px;
+    border-radius: 5px;
+  }
+  .logo {
+    width: 180px;
+    margin-left: 0px;
   }
 
-  nav ul {
-    display: none;
-  }
-  .mobile-nav-toogle-open {
-    display: flex;
-  }
 }
+
+
 .hero {
   background: url(/images/Background.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 80vh;
+  height: 60vh;
 }
 .hero button {
   font-weight: 600;
@@ -143,7 +163,18 @@ nav ul li:hover {
 
 @media (max-width: 720px) {
   .container {
-    gap: 0px;
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  margin-top: -30px;
+  padding-top: 30px;
+  gap: 25px;
+  }
+  .container img {
+    width: 100%;
+    border-radius: 15px;
   }
 }
 
@@ -208,17 +239,22 @@ nav ul li:hover {
   display: flex;
   padding-top: 30px;
   gap: 10px;
+  
 }
 .tfp p {
   font-size: 14px;
   font-weight: 500;
   color: #4b4b4b;
 }
+.trusted-img{
+  width: 20px;
+  height: 20px;
+}
 
 @media (max-width: 720px) {
   .explore-div {
     flex-direction: column;
-    padding-inline: 10px;
+    padding-inline: 5px;
     padding-block-start: 5rem;
     img {
       width: 200px;
@@ -233,7 +269,12 @@ nav ul li:hover {
   .tfp {
     img {
       width: 10%;
+      height: 10%;
     }
+  }
+  .trusted-img{
+    width: 5px;
+    height: 5px;
   }
   .explore-earth {
     height: 80%;
@@ -308,8 +349,7 @@ nav ul li:hover {
     margin-left: 110px;
   }
   .dot {
-    margin-top: 10px;
-    margin-left: 150px;
+    display: none;
   }
   .insurance-div {
     display: flex;
@@ -1151,14 +1191,12 @@ footer a p:hover {
   padding: 5px 14px 5px 14px;
 }
 @media (max-width: 720px) {
-
   .map {
     width: 50%;
     margin-block: 50px;
-    img{
+    img {
       width: 390px;
       height: 300px;
-      
     }
   }
   .last-section-service {
@@ -1167,8 +1205,8 @@ footer a p:hover {
     justify-content: center;
     margin-bottom: 50px;
     gap: 20px;
-    
-    img{
+
+    img {
       width: 380px;
       height: 500px;
     }
@@ -1192,7 +1230,7 @@ footer a p:hover {
     padding: 9px 13px 9px 13px;
   }
   .service-input-message {
-    margin:auto ;
+    margin: auto;
     width: 95%;
     font-size: 14px;
     line-height: 14px;
@@ -1200,10 +1238,10 @@ footer a p:hover {
     border-radius: 3px;
     padding: 3px 10px 3px 10px;
   }
-.service-btn{
-  width: 95%;
-  margin: auto;
-  height: 50px;
-  border-radius: 3px;
-}
+  .service-btn {
+    width: 95%;
+    margin: auto;
+    height: 50px;
+    border-radius: 3px;
+  }
 }
