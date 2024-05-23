@@ -4,9 +4,27 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+.mobile-list{
+  display: none;
+}
+.iconsize {
+}
+nav ul {
+  list-style-type: none;
 
+  padding-bottom: 20px;
+}
 
-
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+.mobile-menu-button{
+  display: none;
+}
+.additional {
+  padding-bottom: 30px;
+}
 .head-header {
   padding-block: 25px;
 }
@@ -68,6 +86,7 @@ a {
   display: none;
 }
 
+
 @media (max-width: 720px) {
   .home-list {
     color: #252525 !important;
@@ -76,6 +95,13 @@ a {
     font-weight: 500;
     padding-left: 18px !important;
   }
+  .mobile-menu-button{
+    display: block;
+  }
+  .mobile-list{
+    display: block ;
+  }
+  
   .loan-btn {
     margin-left: 18px !important;
     margin-right: 0px;
@@ -94,16 +120,14 @@ a {
     width: 180px;
     margin-left: 0px;
   }
-
 }
-
 
 .hero {
   background: url(/images/Background.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 60vh;
+  height: 80vh;
 }
 .hero button {
   font-weight: 600;
@@ -152,31 +176,31 @@ a {
   }
 }
 
-.container {
+.store {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #008100;
-  margin-top: -30px;
+  margin-top: 0;
   padding-top: 30px;
   gap: 35px;
 }
-.container img {
+.store img {
   width: 100%;
 }
 
 @media (max-width: 720px) {
-  .container {
+  .store {
     display: flex;
     flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #ffffff;
-  margin-top: -30px;
-  padding-top: 30px;
-  gap: 25px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    margin-top: -30px;
+    padding-top: 30px;
+    gap: 25px;
   }
-  .container img {
+  .store img {
     width: 100%;
     border-radius: 15px;
   }
@@ -243,14 +267,13 @@ a {
   display: flex;
   padding-top: 30px;
   gap: 10px;
-  
 }
 .tfp p {
   font-size: 14px;
   font-weight: 500;
   color: #4b4b4b;
 }
-.trusted-img{
+.trusted-img {
   width: 20px;
   height: 20px;
 }
@@ -276,7 +299,7 @@ a {
       height: 10%;
     }
   }
-  .trusted-img{
+  .trusted-img {
     width: 5px;
     height: 5px;
   }
